@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloatingClock", "FloatingClock\FloatingClock.csproj", "{36345FE6-7807-4985-98CF-1375F70F86AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36345FE6-7807-4985-98CF-1375F70F86AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36345FE6-7807-4985-98CF-1375F70F86AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36345FE6-7807-4985-98CF-1375F70F86AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36345FE6-7807-4985-98CF-1375F70F86AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB4C76C3-6174-4DCF-990C-3805A9850F03}
+	EndGlobalSection
+EndGlobal
