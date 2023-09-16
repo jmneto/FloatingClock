@@ -2,6 +2,8 @@
 
 Welcome to the Floating Clock project! This minimalist and elegant clock application is designed to float gracefully on your desktop, always in view but never in the way. Whether you need to keep track of time while working, studying, or simply want a stylish timepiece, the Floating Clock has you covered.
 
+![Screenshot](/ScreenShot/Screenshot.png "Clock Screenshot")
+
 ## Key Features
 
 - **Stylish Floating Design:** The Floating Clock sits elegantly on your desktop, allowing you to stay informed about the time without cluttering your workspace.
