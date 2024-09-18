@@ -2,10 +2,8 @@
 // Jan 2021
 
 using System;
-using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Interop;
 using System.Windows.Media;
 
 namespace FloatingClock
@@ -71,7 +69,7 @@ namespace FloatingClock
 
             // Pixel Saver
             this.Left += dir;
-            if (++cntMove >= 30)
+            if (++cntMove >= 60)
             {
                 dir *= -1;
                 cntMove = 0;
@@ -91,26 +89,9 @@ namespace FloatingClock
             public UInt32 flags;
         };
 
-        private static IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
-        {
-            switch (msg)
-            {
-                case 0x46://WM_WINDOWPOSCHANGING
-                    if (Mouse.LeftButton != MouseButtonState.Pressed)
-                    {
-                        WINDOWPOS wp = (WINDOWPOS)Marshal.PtrToStructure(lParam, typeof(WINDOWPOS));
-                        wp.flags = wp.flags | 2; //SWP_NOMOVE
-                        Marshal.StructureToPtr(wp, lParam, false);
-                    }
-                    break;
-            }
-            return IntPtr.Zero;
-        }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            HwndSource source = HwndSource.FromHwnd(new WindowInteropHelper(this).Handle);
-            source.AddHook(new HwndSourceHook(WndProc));
         }
 
         // Clock Pixel Saving Movement
